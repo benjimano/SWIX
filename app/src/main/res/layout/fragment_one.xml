@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bensly.swix.OneFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--
+    <Button
+        android:text="Find Event"
+        android:onClick="findEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_above="@+id/mySwixSwitch"
+        android:layout_alignStart="@+id/mySwixSwitch"
+        android:layout_marginBottom="22dp" />
+    -->
+
+    <Switch
+        android:id="@+id/mySwixSwitch"
+        android:layout_width="match_parent"
+        android:text="TURN SWIX OFF/ ON"
+        android:textSize="16sp"
+        android:layout_marginBottom="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="textStart"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/txtTodaysDate"
+        android:text="30 December 2017"
+        android:textSize="22sp"
+        android:layout_below="@+id/mySwixSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:width="200dp"/>
+
+    <TextView
+        android:id="@+id/txtEventsToday"
+        android:text="Today you have ? events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtTodaysDate"
+        android:layout_marginTop="5dp"
+        android:width="200dp"/>
+
+    <TextView
+        android:text="Cloudy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtWeather"
+        android:textSize="30sp"
+        android:layout_below="@+id/txtEventsToday"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:paddingTop="5dp"
+        android:width="200dp"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cloudyweather1"
+        android:id="@+id/imgWeather"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:layout_below="@+id/txtWeather"
+        android:cropToPadding="false"
+        android:adjustViewBounds="true" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgWeather"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp">
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        app:fabSize="normal"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:srcCompat="@drawable/meeting2"
+        android:id="@+id/btnMeetingEvent"
+        app:backgroundTint="#ffffff" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        app:fabSize="normal"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:srcCompat="@drawable/running2"
+        android:id="@+id/btnRunEvent"
+        app:backgroundTint="#ffffff" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        app:fabSize="normal"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:srcCompat="@drawable/driving2"
+        android:id="@+id/btnDrivingEvent"
+        app:backgroundTint="#ffffff" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        app:fabSize="normal"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:srcCompat="@drawable/social2"
+        android:id="@+id/btnSocialEvent"
+        app:backgroundTint="#ffffff"
+        android:gravity="end" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
